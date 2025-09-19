@@ -1,0 +1,8 @@
+#search-bar {
+    height: 3vh;
+    width: 13vw;
+    border-radius: 50px;
+    border: solid gray 1px;
+    color: gray;
+    font-size: 2vh;
+}

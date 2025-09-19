@@ -10,7 +10,7 @@ Day 1 → Create a React app (vite or create-react-app). Add React Router. Set u
 
 /cart (shopping cart page)
 
-Day 2 → Create ProductList component. Fetch products from API (GET /products) and display them in a grid.
+Day 2 → Create ProductList component. Fetch products from API (GET /products) and display them in a grid. => almost Done
 
 Day 3 → Create ProductDetail page. Fetch product by id (GET /products/:id) and display details.
 
