@@ -1,0 +1,36 @@
+.item-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6vw;
+    margin-top: 3vh;
+    justify-content: center;
+    padding: 2vw;
+}
+
+#category-heading {
+    text-transform: capitalize;
+    margin-left: 11vw;
+    margin-top: 10vh;
+    font-size: 3vh;
+}
+
+#product-name, #product-price {
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
+#description{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 1.3vh;
+}
+
+#stock, #rating {
+    margin-bottom: 1vh;
+    font-size: 1.3vh;
+}
+
+/* .full-item {
+    background-color: rgb(239, 228, 228);
+    border-radius: 3vh;
+} */

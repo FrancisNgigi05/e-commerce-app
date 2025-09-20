@@ -6,10 +6,9 @@ import SneakersImage from '../assets/SneakersImage.jpg'
 import TechImage from '../assets/TechImage.jpg'
 import TravelImage from '../assets/TravelImage.jpg'
 import { API_URL } from '../api'
-import { NavLink } from 'react-router-dom'
-import GetUrsLogo from '../assets/GetUrsLogo.png'
-import SearchBar from '../SearchComponent/SearchBar'
-import { User, ShoppingCart, Phone } from 'lucide-react'
+import { Link, NavLink } from 'react-router-dom'
+
+import AddToCartBtn from '../AddToCartBtnComponent/AddToCartBtn'
 
 
 function App() {
@@ -51,16 +50,16 @@ function App() {
 
   const categoriesImageDisplayed = categories.map((cat) => {
     return (
-      <div className='category-card'>
+      <Link key={cat} to={`/product/${cat.toLowerCase()}`} className='category-card'>
         <img className='category-image'  src={categoryImage[cat]} alt={cat}/>
         <div className='category-text'>{cat}</div>
-      </div>
+      </Link>
     )
   })
 
-  const selectCategoriesDisplayed = categories.map((cat) => 
-    <option key={cat} value={cat}>{cat}</option>
-  )
+  // const selectCategoriesDisplayed = categories.map((cat) => 
+  //   <option key={cat} value={cat}>{cat}</option>
+  // )
 
   const smallDisplay = Object.keys(groupedProducts).map((category) => (
     <div key={category} id={`section-${category.replace(/\s+/g, '-')}`}  className='category-preview'>
@@ -73,7 +72,7 @@ function App() {
               <h4 id='product-name' className='product-item'>{prod.name}</h4>
               <p id='product-price' className='product-item'>${prod.price}</p>
             </div>
-            <button id='add-to-cart-btn'>Add to Cart</button>
+            <AddToCartBtn />
           </div>
         ))}
       </div>
@@ -82,7 +81,7 @@ function App() {
 
   return (
     <>
-      <div className='top-display'>
+      {/* <div className='top-display'>
         <div id="phone-details">
           <Phone style={{width: '1vw', height: '2vh'}} />
           <p id='number'>+25443303286</p>
@@ -114,7 +113,7 @@ function App() {
           <User style={{width: '3vw', height: '3vh'}}/>
         </nav>
         <ShoppingCart style={{width: '3vw', height: '3vh'}} id='shopping-cart'/>
-      </div>
+      </div> */}
       
       <div className='hero-section'>
         <img id="home-page-image" src="https://wallpaperaccess.com/full/2593143.jpg" alt="Shopping logo" />

@@ -1,0 +1,22 @@
+.product-image {
+    width: 15vw;
+    height: 20vh;
+    border-radius: 2vh;
+    margin-bottom: 2vh;
+    transition: transform 0.2s ease;
+    background-color: transparent;
+    object-fit: cover;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+
+.outer-image-frame {
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+}
+
