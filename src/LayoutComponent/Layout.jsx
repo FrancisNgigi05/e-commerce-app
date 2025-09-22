@@ -39,25 +39,25 @@ function Layout() {
             </div>
             <div className='nav-display'>
                 <nav className='nav-container'>
-                <img src={GetUrsLogo} alt="GetUrsLogo" id='logo'/>
-                <select
-                    name="categories"
-                    id="categories"
-                    onChange={(e) => {
-                    const selected = e.target.value;
-                    const section = document.getElementById(`section-${selected.replace(/\s+/g, '-')}`);
-                    if(section) {
-                        section.scrollIntoView({behavior: "smooth"});// smooth scroll
-                    }
-                    }}
-                >
-                    <option id='category-option'>Categories</option>
-                    {selectCategoriesDisplayed}
-                </select>
-                <SearchBar />
-                <User style={{width: '3vw', height: '3vh'}}/>
+                    <img src={GetUrsLogo} alt="GetUrsLogo" id='logo'/>
+                    <select
+                        name="categories"
+                        id="categories"
+                        onChange={(e) => {
+                        const selected = e.target.value;
+                        const section = document.getElementById(`section-${selected.replace(/\s+/g, '-')}`);
+                        if(section) {
+                            section.scrollIntoView({behavior: "smooth"});// smooth scroll
+                        }
+                        }}
+                    >
+                        <option id='category-option'>Categories</option>
+                        {selectCategoriesDisplayed}
+                    </select>
+                    <SearchBar />
+                    <User style={{width: '3vw', height: '3vh'}}/>
+                    <ShoppingCart style={{width: '3vw', height: '3vh'}} id='shopping-cart'/>
                 </nav>
-                <ShoppingCart style={{width: '3vw', height: '3vh'}} id='shopping-cart'/>
             </div>
             <Outlet />
         </>

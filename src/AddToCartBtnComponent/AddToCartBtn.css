@@ -1,7 +1,7 @@
 #add-to-cart-btn {
     height: 3vh;
     align-self: first baseline;
-    border-radius: 40px;
+    border-radius: 2vw;
     width: 5vw;
     font-weight: bold;
     font-size: 1vh;
@@ -10,4 +10,6 @@
 
 #add-to-cart-btn:hover {
     background-color: rgba(238, 180, 180, 0.46);
+    border: none;
+    cursor: pointer;
 }

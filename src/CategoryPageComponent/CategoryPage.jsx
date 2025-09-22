@@ -1,6 +1,6 @@
 import { UserPen } from 'lucide-react';
 import React, {useEffect, useState} from 'react'
-import { data, useParams } from 'react-router-dom';
+import { data, Link, useParams } from 'react-router-dom';
 import { API_URL } from '../api';
 import ProductItem from './ProductItem';
 import './CategoryPage.css'
@@ -22,7 +22,9 @@ function CategoryPage() {
   // console.log(productsByCategory);
   
   const productsDisplayed = productsByCategory.map((prod) => (
-      <ProductItem price={prod.price} image={prod.image} key={prod.id} stock={prod.stock} rating={prod.rating} description={prod.description} name={prod.name}/>
+      <Link style={{textDecoration: "none", color: "inherit"}} to={`/product/${prod.category.toLowerCase()}/${prod.id}`} key={prod.id}>
+        <ProductItem price={prod.price} image={prod.image} key={prod.id} stock={prod.stock} rating={prod.rating} description={prod.description} name={prod.name}/>
+      </Link>
     )
   )
 

@@ -1,0 +1,31 @@
+.buy-btn {
+    height: 3vh;
+    width: 5vw;
+    border-radius: 3vw;
+    background-color: white;
+    font-size: 1.3 vh;
+    border: none;
+    background-color: rgb(13, 169, 13);
+    font-size: 1vh;
+}
+
+.buy-btn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+
+
+/* #add-to-cart-btn {
+    height: 3vh;
+    align-self: first baseline;
+    border-radius: 40px;
+    width: 5vw;
+    font-weight: bold;
+    font-size: 1vh;
+    background-color: white;
+}
+
+#add-to-cart-btn:hover {
+    background-color: rgba(238, 180, 180, 0.46);
+} */

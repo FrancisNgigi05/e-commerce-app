@@ -57,64 +57,28 @@ function App() {
     )
   })
 
-  // const selectCategoriesDisplayed = categories.map((cat) => 
-  //   <option key={cat} value={cat}>{cat}</option>
-  // )
-
   const smallDisplay = Object.keys(groupedProducts).map((category) => (
-    <div key={category} id={`section-${category.replace(/\s+/g, '-')}`}  className='category-preview'>
-      <h2 className='category-heading'>{category}</h2>
-      <div className='products-row'>
-        {groupedProducts[category].map((prod) => (
-          <div key={prod.id} className='product-card'>
-            <img src={prod.image} alt={prod.name} id='product-image' />
-            <div className='product-info'>
-              <h4 id='product-name' className='product-item'>{prod.name}</h4>
-              <p id='product-price' className='product-item'>${prod.price}</p>
-            </div>
-            <AddToCartBtn />
-          </div>
-        ))}
+      <div id={`section-${category.replace(/\s+/g, '-')}`}  className='category-preview'>
+        <h2 className='category-heading'>{category}</h2>
+        <div className='products-row'>
+          {groupedProducts[category].map((prod) => (
+            <Link key={prod.id} to={`/product/${category.toLocaleLowerCase()}/${prod.id}`} style={{textDecoration: "none", color: "inherit"}}>
+              <div className='product-card'>
+                <img src={prod.image} alt={prod.name} id='product-image' />
+                <div className='product-info'>
+                  <h4 id='product-name' className='product-item'>{prod.name}</h4>
+                  <p id='product-price' className='product-item'>${prod.price}</p>
+                </div>
+                <AddToCartBtn />
+              </div>
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
   )) 
 
   return (
     <>
-      {/* <div className='top-display'>
-        <div id="phone-details">
-          <Phone style={{width: '1vw', height: '2vh'}} />
-          <p id='number'>+25443303286</p>
-        </div>
-        <div id='info-shop'>
-          <p>Get 50% Off on Selected Items</p>
-          <p>|</p>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='nav-display'>
-        <nav className='nav-container'>
-          <img src={GetUrsLogo} alt="GetUrsLogo" id='logo'/>
-          <select
-            name="categories"
-            id="categories"
-            onChange={(e) => {
-              const selected = e.target.value;
-              const section = document.getElementById(`section-${selected.replace(/\s+/g, '-')}`);
-              if(section) {
-                section.scrollIntoView({behavior: "smooth"});// smooth scroll
-              }
-            }}
-          >
-            <option id='category-option'>Category</option>
-            {selectCategoriesDisplayed}
-          </select>
-          <SearchBar />
-          <User style={{width: '3vw', height: '3vh'}}/>
-        </nav>
-        <ShoppingCart style={{width: '3vw', height: '3vh'}} id='shopping-cart'/>
-      </div> */}
-      
       <div className='hero-section'>
         <img id="home-page-image" src="https://wallpaperaccess.com/full/2593143.jpg" alt="Shopping logo" />
         <div className='hero-text'>

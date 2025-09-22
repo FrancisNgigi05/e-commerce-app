@@ -1,8 +1,9 @@
 #search-bar {
     height: 3vh;
-    width: 13vw;
+    width: 15vw;
     border-radius: 3vh;
     border: solid gray 1px;
     color: gray;
-    font-size: 2vh;
+    font-size: 1.5vh;
+    padding: 1vw;
 }
