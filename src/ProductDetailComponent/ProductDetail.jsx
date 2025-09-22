@@ -16,7 +16,6 @@ function ProductDetail() {
     const [similarProducts, setSimilarProducts] = useState([]);
     const increment = () => setCounter(counter + 1)
     const decrement = () => setCounter (prev => (prev > 0 ? prev - 1 : 0));
-        
 
     useEffect(() => {
         fetch(`${API_URL}/products/${productId}`)
