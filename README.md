@@ -14,7 +14,7 @@ Day 2 → Create ProductList component. Fetch products from API (GET /products) 
 
 Day 3 → Create ProductDetail page. Fetch product by id (GET /products/:id) and display details. => Done
 
-Day 4 → Add search + filter (category). Use query like /products?category=Electronics or /products?name_like=Shoes. => 
+Day 4 → Add search + filter (category). Use query like /products?category=Electronics or /products?name_like=Shoes. => Done
 
 Day 5 → Add sorting (e.g., /products?_sort=price&_order=asc). Add a dropdown in UI to switch sort.
 

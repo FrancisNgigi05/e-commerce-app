@@ -1,4 +1,9 @@
-#search-bar {
+.search-container {
+    position: relative;
+    width: 30vw;
+}
+
+.search-input {
     height: 3vh;
     width: 15vw;
     border-radius: 3vh;
@@ -6,4 +11,121 @@
     color: gray;
     font-size: 1.5vh;
     padding: 1vw;
+}
+
+.search-dropdown {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    height: 50vh;
+    left: 0;
+    width: 40vw;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: white;
+    border: 0.2vh solid #ddd;
+    border-top: none;
+    overflow-y: auto;
+    z-index: 100;
+    border-radius: 1vh;
+    /* max-width: 30vw; */
+    flex-direction: column;
+    scrollbar-width: thin;
+    /* margin-right: 10vw; */
+    opacity: 0.9;
+    padding-left: 1vw;
+}
+
+.popular-product-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.dropdown-title {
+    font-weight: bold;
+    padding: 2vh 2vw;
+    border-bottom: 0.4vh solid #eee;
+    /* background-color: #f9f9f9; */
+    margin-bottom: 1vh;
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 2vh;
+    font-size: 1.5vh;
+    text-decoration: none;
+    color: black;
+    gap: 4vw;
+    background-color: #e8d5d5;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-img {
+    width: 6vw;
+    height: 6vh;
+    object-fit: cover;
+    border-radius: 1vh;
+    margin-left: -0.5vw;
+}
+
+
+.filter-product-display {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#img-name {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.dropdown-filtered-img {
+     width: 6vw;
+    height: 6vh;
+    object-fit: cover;
+    border-radius: 1vh;
+    margin-left: -0.5vw;
+}
+
+.dropdown-filtered-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* padding: 2vw; */
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+    margin-left: -1vw;
+}
+
+.dropdown-filtered-item:last-child {
+  margin-bottom: 0; /* remove space after last one */
+}
+
+.dropdown-filtered-item:hover {
+    background-color: #f0f0f0;
+}
+
+.extra-filtered-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
 }
