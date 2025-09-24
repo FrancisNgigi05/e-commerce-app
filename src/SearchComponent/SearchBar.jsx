@@ -67,7 +67,7 @@ function SearchBar() {
                                     >
                                         <img src={prod.image} alt={prod.name} className='dropdown-img' />
                                         <div className='extra-info'>
-                                            <span>{prod.name}</span>
+                                            <span style={{fontSize: "2vh", fontWeight:"bold"}}>{prod.name}</span>
                                             <span className='stock'>{prod.stock} item(s) Available</span>
                                         </div>
                                     </Link>
@@ -85,7 +85,7 @@ function SearchBar() {
                                     <div className='extra-filtered-info'>
                                         <div id='img-name'>
                                             <img src={prod.image} alt={prod.name} className='dropdown-filtered-img' />
-                                            <span>{prod.name}</span>
+                                            <span style={{fontSize: "2vh", fontWeight:"bold"}}>{prod.name}</span>
                                         </div>
                                         <span id="dropdown-price">${prod.price}</span>
                                     </div>
