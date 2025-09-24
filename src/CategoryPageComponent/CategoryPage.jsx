@@ -57,7 +57,7 @@ function CategoryPage() {
         <h1 id='category-heading'>{category} Products For You!</h1> 
         {/* Sort Dropdown */}
         <select
-          style={{height: "4vh", alignSelf:"center", width: "6vw", borderRadius: "10vw", fontSize: "2vh", textAlign: "center", marginTop: "9vh", backgroundColor:  "rgba(238, 180, 180, 0.46)"}}
+          style={{height: "3vh", alignSelf:"center", width: "5vw", borderRadius: "10vw", fontSize: "1.5vh", textAlign: "center", marginTop: "9vh"}}
           id="sort"
           value={sortOption}
           onChange={(e) => setSortOption(e.target.value)}
