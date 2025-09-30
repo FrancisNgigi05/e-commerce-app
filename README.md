@@ -16,13 +16,13 @@ Day 3 → Create ProductDetail page. Fetch product by id (GET /products/:id) and
 
 Day 4 → Add search + filter (category). Use query like /products?category=Electronics or /products?name_like=Shoes. => Done
 
-Day 5 → Add sorting (e.g., /products?_sort=price&_order=asc). Add a dropdown in UI to switch sort.
+Day 5 → Add sorting (e.g., /products?_sort=price&_order=asc). Add a dropdown in UI to switch sort. => Done
 
-Day 6 → Build a Cart page. Show all items (GET /cart?_expand=product).
+Day 6 → Build a Cart page. Show all items (GET /cart?_expand=product). => Done
 
-Day 7 → Add “Add to Cart” button on product detail. Call POST /cart to add.
+Day 7 → Add “Add to Cart” button on product detail. Call POST /cart to add. => Done
 
-Day 8 → Enable update quantity (PATCH /cart/:id) and remove (DELETE /cart/:id).
+Day 8 → Enable update quantity (PATCH /cart/:id) and remove (DELETE /cart/:id). => Done
 
 Day 9 → Create a Checkout page. Place order (POST /orders).
 

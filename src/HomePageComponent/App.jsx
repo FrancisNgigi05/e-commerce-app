@@ -6,9 +6,8 @@ import SneakersImage from '../assets/SneakersImage.jpg'
 import TechImage from '../assets/TechImage.jpg'
 import TravelImage from '../assets/TravelImage.jpg'
 import { API_URL } from '../api'
-import { Link, NavLink } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
-import AddToCartBtn from '../AddToCartBtnComponent/AddToCartBtn'
 
 
 function App() {
@@ -69,7 +68,7 @@ function App() {
                   <h4 id='product-name' className='product-item'>{prod.name}</h4>
                   <p id='product-price' className='product-item'>${prod.price}</p>
                 </div>
-                <AddToCartBtn />
+                <button id='add-to-cart-btn'>Add To Cart</button>
               </div>
             </Link>
           ))}

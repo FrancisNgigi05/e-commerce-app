@@ -1,6 +1,5 @@
-import { UserPen } from 'lucide-react';
 import React, {useEffect, useState} from 'react'
-import { data, Link, useParams } from 'react-router-dom';
+import {Link, useParams } from 'react-router-dom';
 import { API_URL } from '../api';
 import ProductItem from './ProductItem';
 import './CategoryPage.css'
@@ -14,9 +13,7 @@ function CategoryPage() {
     fetch(`${API_URL}/products`)
       .then((r) => r.json())
       .then((data) => {
-        // console.log(data);
         const filteredData = data.filter((product) => product.category.toLowerCase() === category.toLocaleLowerCase())
-        // console.log(filteredData);
         setProductsByCategory(filteredData)
       })
   }, [category])
@@ -46,6 +43,7 @@ function CategoryPage() {
           rating={prod.rating} 
           description={prod.description} 
           name={prod.name}
+          product={prod}
         />
       </Link>
     )

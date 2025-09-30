@@ -1,17 +1,17 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Modern Sofa",
       "category": "Furniture",
       "price": 54,
       "description": "Modern Sofa - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/2185555563/photo/modern-luxury-living-room-interior-with-wall-decorating-panels-and-sofa.webp?a=1&b=1&s=612x612&w=0&k=20&c=IOQwJTtKUKflSdstSU9-BnqkPwYFyjth3ju6fyizZeE=",
       "stock": 11,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Wooden Dining Table",
       "category": "Furniture",
       "price": 59,
@@ -21,17 +21,17 @@
       "rating": 3.5
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Office Chair",
       "category": "Furniture",
       "price": 45,
       "description": "Office Chair - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1688578735427-994ecdea3ea4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZmaWNlJTIwY2hhaXJ8ZW58MHx8MHx8fDA%3D",
       "stock": 13,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Bookshelf",
       "category": "Furniture",
       "price": 88,
@@ -41,17 +41,17 @@
       "rating": 3.5
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Bed Frame",
       "category": "Furniture",
       "price": 82,
       "description": "Bed Frame - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1404705316/photo/bed-frame.webp?a=1&b=1&s=612x612&w=0&k=20&c=k7AJL1hFYIy04r9ZQeYPBPZEU7K9y2Bo6Vxmpkuo0vw=",
       "stock": 15,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Coffee Table",
       "category": "Furniture",
       "price": 81,
@@ -61,17 +61,17 @@
       "rating": 3.5
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Recliner Chair",
       "category": "Furniture",
       "price": 60,
       "description": "Recliner Chair - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1424803291/photo/close-up-view-of-reclining-chair-in-living-room.webp?a=1&b=1&s=612x612&w=0&k=20&c=xz9MTbUjKDGasGT9QGP7lM6ugopK9u27GWYReB5ajtU=",
       "stock": 17,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Wardrobe",
       "category": "Furniture",
       "price": 83,
@@ -81,17 +81,17 @@
       "rating": 3.5
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "TV Stand",
       "category": "Furniture",
       "price": 95,
       "description": "TV Stand - high quality and reliable.",
       "image": "https://plus.unsplash.com/premium_photo-1681816189276-69731364c133?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8VHYlMjBzdGFuZHxlbnwwfHwwfHx8MA%3D%3D",
       "stock": 19,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Side Table",
       "category": "Furniture",
       "price": 104,
@@ -101,17 +101,17 @@
       "rating": 3.5
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Outdoor Bench",
       "category": "Furniture",
       "price": 121,
       "description": "Outdoor Bench - high quality and reliable.",
       "image": "https://plus.unsplash.com/premium_photo-1728262247357-57e302b41d93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3V0ZG9vciUyMGJlbmNofGVufDB8fDB8fHww",
       "stock": 21,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Study Desk",
       "category": "Furniture",
       "price": 121,
@@ -121,17 +121,17 @@
       "rating": 3.5
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Rocking Chair",
       "category": "Furniture",
       "price": 91,
       "description": "Rocking Chair - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/490915574/photo/rocking-chair-on-white.webp?a=1&b=1&s=612x612&w=0&k=20&c=an8TH_m1lSMU_GtitgAcXiLZDj1tDQ6jSrA6kir_DGE=",
       "stock": 23,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Dresser",
       "category": "Furniture",
       "price": 102,
@@ -141,27 +141,27 @@
       "rating": 3.5
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Nightstand",
       "category": "Furniture",
       "price": 144,
       "description": "Nightstand - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/2149430385/photo/nightstand-next-to-the-bed-with-lamp.webp?a=1&b=1&s=612x612&w=0&k=20&c=4aN0k2QeC4D79BGxMlx9_c0772KGO6mJ31qQ1vuBg6E=",
       "stock": 25,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Leather Tote",
       "category": "Hand Bag",
       "price": 47,
       "description": "Leather Tote - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1624687943971-e86af76d57de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVhdGhlciUyMHRvdGV8ZW58MHx8MHx8fDA%3D",
       "stock": 11,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Canvas Shoulder Bag",
       "category": "Hand Bag",
       "price": 41,
@@ -171,17 +171,17 @@
       "rating": 3.5
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Mini Crossbody",
       "category": "Hand Bag",
       "price": 71,
       "description": "Mini Crossbody - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/2205639282/photo/quilted-crossbody-bags.webp?a=1&b=1&s=612x612&w=0&k=20&c=4pKUilzW7G_N2-YpMaCt-Imz1DaBaacbExFob9K8kdY=",
       "stock": 13,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Luxury Clutch",
       "category": "Hand Bag",
       "price": 74,
@@ -191,17 +191,17 @@
       "rating": 3.5
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Backpack Purse",
       "category": "Hand Bag",
       "price": 65,
       "description": "Backpack Purse - high quality and reliable.",
       "image": "https://plus.unsplash.com/premium_photo-1661497555465-93a250c0bbf1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmFja3BhY2slMjBwdXJzZXxlbnwwfHwwfHx8MA%3D%3D",
       "stock": 15,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Satchel Bag",
       "category": "Hand Bag",
       "price": 79,
@@ -211,17 +211,17 @@
       "rating": 3.5
     },
     {
-      "id": 22,
+      "id": "22",
       "name": "Hobo Bag",
       "category": "Hand Bag",
       "price": 64,
       "description": "Hobo Bag - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/2187449410/photo/close-up.webp?a=1&b=1&s=612x612&w=0&k=20&c=SRnBmvSryrlNC7DLSRUYGMX2fFmzxOFNaVfn-xUXnjE=",
       "stock": 17,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 23,
+      "id": "23",
       "name": "Bucket Bag",
       "category": "Hand Bag",
       "price": 81,
@@ -231,17 +231,17 @@
       "rating": 3.5
     },
     {
-      "id": 24,
+      "id": "24",
       "name": "Laptop Bag",
       "category": "Hand Bag",
       "price": 90,
       "description": "Laptop Bag - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1554412664-6e7b242f969d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wJTIwYmFnfGVufDB8fDB8fHww",
       "stock": 19,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 25,
+      "id": "25",
       "name": "Quilted Chain Bag",
       "category": "Hand Bag",
       "price": 80,
@@ -251,17 +251,17 @@
       "rating": 3.5
     },
     {
-      "id": 26,
+      "id": "26",
       "name": "Wristlet",
       "category": "Hand Bag",
       "price": 119,
       "description": "Wristlet - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1157804651/photo/womans-hand-holding-purple-purse.webp?a=1&b=1&s=612x612&w=0&k=20&c=nbX4TF1AaTi5iZcMrdLMuqs-WxB7bb4kFQ06BHRl0fw=",
       "stock": 21,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 27,
+      "id": "27",
       "name": "Beach Bag",
       "category": "Hand Bag",
       "price": 80,
@@ -271,17 +271,17 @@
       "rating": 3.5
     },
     {
-      "id": 28,
+      "id": "28",
       "name": "Gym Duffel",
       "category": "Hand Bag",
       "price": 130,
       "description": "Gym Duffel - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/171283263/photo/sportbag.webp?a=1&b=1&s=612x612&w=0&k=20&c=2Kmvi7EpoUaHPJZuycjpZW1zIUQSbLBsM-if69ONyTI=",
       "stock": 23,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 29,
+      "id": "29",
       "name": "Messenger Bag",
       "category": "Hand Bag",
       "price": 138,
@@ -291,27 +291,27 @@
       "rating": 3.5
     },
     {
-      "id": 30,
+      "id": "30",
       "name": "Travel Pouch",
       "category": "Hand Bag",
       "price": 134,
       "description": "Travel Pouch - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1324232448/photo/blank-sports-hiking-running-belt-waist-bag-pack-for-mockup.webp?a=1&b=1&s=612x612&w=0&k=20&c=zbdwr0kE8rK3uDg0B8PQe3Lb0ka_urKdYZaMjEIYKlc=",
       "stock": 25,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 46,
+      "id": "46",
       "name": "Smartphone",
       "category": "Tech",
       "price": 29,
       "description": "Smartphone - high quality and reliable.",
       "image": "https://picsum.photos/seed/tech1/400/300",
       "stock": 11,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 47,
+      "id": "47",
       "name": "Laptop",
       "category": "Tech",
       "price": 37,
@@ -321,17 +321,17 @@
       "rating": 3.5
     },
     {
-      "id": 48,
+      "id": "48",
       "name": "Tablet",
       "category": "Tech",
       "price": 60,
       "description": "Tablet - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1544244015-9c72fd9c866d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fFRhYmxldHxlbnwwfHwwfHx8MA%3D%3D",
       "stock": 13,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 49,
+      "id": "49",
       "name": "Wireless Earbuds",
       "category": "Tech",
       "price": 48,
@@ -341,17 +341,17 @@
       "rating": 3.5
     },
     {
-      "id": 50,
+      "id": "50",
       "name": "Bluetooth Speaker",
       "category": "Tech",
       "price": 90,
       "description": "Bluetooth Speaker - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1059154330/photo/boombox.webp?a=1&b=1&s=612x612&w=0&k=20&c=hjfiUYsBprkQFp4IG6G74pHifyLalVnaNlJ5QQsUHXk=",
       "stock": 15,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 51,
+      "id": "51",
       "name": "Gaming Mouse",
       "category": "Tech",
       "price": 74,
@@ -361,17 +361,17 @@
       "rating": 3.5
     },
     {
-      "id": 52,
+      "id": "52",
       "name": "Mechanical Keyboard",
       "category": "Tech",
       "price": 89,
       "description": "Mechanical Keyboard - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1602025882379-e01cf08baa51?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVjaGFuaWNhbCUyMGtleWJvYXJkfGVufDB8fDB8fHww",
       "stock": 17,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 53,
+      "id": "53",
       "name": "Smartwatch",
       "category": "Tech",
       "price": 77,
@@ -381,17 +381,17 @@
       "rating": 3.5
     },
     {
-      "id": 54,
+      "id": "54",
       "name": "VR Headset",
       "category": "Tech",
       "price": 98,
       "description": "VR Headset - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dnIlMjBoZWFkc2V0fGVufDB8fDB8fHww",
       "stock": 19,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 55,
+      "id": "55",
       "name": "Monitor",
       "category": "Tech",
       "price": 95,
@@ -401,17 +401,17 @@
       "rating": 3.5
     },
     {
-      "id": 56,
+      "id": "56",
       "name": "Webcam",
       "category": "Tech",
       "price": 77,
       "description": "Webcam - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1623949556303-b0d17d198863?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViY2FtfGVufDB8fDB8fHww",
       "stock": 21,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 57,
+      "id": "57",
       "name": "External Hard Drive",
       "category": "Tech",
       "price": 118,
@@ -421,17 +421,17 @@
       "rating": 3.5
     },
     {
-      "id": 58,
+      "id": "58",
       "name": "Power Bank",
       "category": "Tech",
       "price": 125,
       "description": "Power Bank - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1585995603413-eb35b5f4a50b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG93ZXIlMjBiYW5rfGVufDB8fDB8fHww",
       "stock": 23,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 59,
+      "id": "59",
       "name": "Drone",
       "category": "Tech",
       "price": 92,
@@ -441,27 +441,27 @@
       "rating": 3.5
     },
     {
-      "id": 60,
+      "id": "60",
       "name": "Portable Projector",
       "category": "Tech",
       "price": 133,
       "description": "Portable Projector - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1139503562/photo/mini-projector-for-presentation.webp?a=1&b=1&s=612x612&w=0&k=20&c=uZT3R8O38Xc-B1x0vcQK4nLYZryG0TfSpn46OnsmcAU=",
       "stock": 25,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 61,
+      "id": "61",
       "name": "Running Shoes",
       "category": "Sneakers",
       "price": 72,
       "description": "Running Shoes - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1562183241-b937e95585b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cnVubmluZyUyMHNob2VzfGVufDB8fDB8fHww",
       "stock": 11,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 62,
+      "id": "62",
       "name": "High-top Sneakers",
       "category": "Sneakers",
       "price": 59,
@@ -471,17 +471,17 @@
       "rating": 3.5
     },
     {
-      "id": 63,
+      "id": "63",
       "name": "Casual Slip-ons",
       "category": "Sneakers",
       "price": 43,
       "description": "Casual Slip-ons - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/489750113/photo/mens-loafer-shoe.webp?a=1&b=1&s=612x612&w=0&k=20&c=L7h0kOCwW8H0EqiHE5GIwAmprKGmjl21IlfKJP__X_M=",
       "stock": 13,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 64,
+      "id": "64",
       "name": "Basketball Shoes",
       "category": "Sneakers",
       "price": 84,
@@ -491,17 +491,17 @@
       "rating": 3.5
     },
     {
-      "id": 65,
+      "id": "65",
       "name": "Skate Shoes",
       "category": "Sneakers",
       "price": 52,
       "description": "Skate Shoes - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1429698142/photo/active-lifestyle-sports-rollers-of-green-color-on-a-yellow-background-3d-render.webp?a=1&b=1&s=612x612&w=0&k=20&c=UPJxUklI53xBsLQKEaRsRcg9jnMRwsO8U5KksB0MRzM=",
       "stock": 15,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 66,
+      "id": "66",
       "name": "Trail Runners",
       "category": "Sneakers",
       "price": 81,
@@ -511,17 +511,17 @@
       "rating": 3.5
     },
     {
-      "id": 67,
+      "id": "67",
       "name": "Chunky Sneakers",
       "category": "Sneakers",
       "price": 73,
       "description": "Chunky Sneakers - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/2155748882/photo/sneakers-on-dark-gray-concrete-background-texture-of-the-old-dark-stone-or-broken-brick-the.webp?a=1&b=1&s=612x612&w=0&k=20&c=neAe8KDUx1M_EBBkbPwX6UPnVUVd-8lR8yXzBO3yEEQ=",
       "stock": 17,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 68,
+      "id": "68",
       "name": "Classic White Sneakers",
       "category": "Sneakers",
       "price": 82,
@@ -531,17 +531,17 @@
       "rating": 3.5
     },
     {
-      "id": 69,
+      "id": "69",
       "name": "Retro Sneakers",
       "category": "Sneakers",
       "price": 108,
       "description": "Retro Sneakers - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/471916961/photo/green-sneaker-on-a-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=esDteG_3oSIc4UZSwFlp6ncetIXDtIOGvYAVduOQ5IY=",
       "stock": 19,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 70,
+      "id": "70",
       "name": "Lightweight Trainers",
       "category": "Sneakers",
       "price": 117,
@@ -551,17 +551,17 @@
       "rating": 3.5
     },
     {
-      "id": 71,
+      "id": "71",
       "name": "Soccer Cleats",
       "category": "Sneakers",
       "price": 121,
       "description": "Soccer Cleats - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1597274747316-808c6786c165?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29jY2VyJTIwY2xlYXRzfGVufDB8fDB8fHww",
       "stock": 21,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 72,
+      "id": "72",
       "name": "Tennis Shoes",
       "category": "Sneakers",
       "price": 115,
@@ -571,17 +571,17 @@
       "rating": 3.5
     },
     {
-      "id": 73,
+      "id": "73",
       "name": "Canvas Sneakers",
       "category": "Sneakers",
       "price": 108,
       "description": "Canvas Sneakers - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/2149951279/photo/a-pair-of-sneakers-isolated-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=w2-rM7_sGbq1VzsTKGUkKlIQqyMeNTOPjk9mflKWsJw=",
       "stock": 23,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 74,
+      "id": "74",
       "name": "CrossFit Trainers",
       "category": "Sneakers",
       "price": 114,
@@ -591,27 +591,27 @@
       "rating": 3.5
     },
     {
-      "id": 75,
+      "id": "75",
       "name": "Limited Edition Sneakers",
       "category": "Sneakers",
       "price": 143,
       "description": "Limited Edition Sneakers - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/517875329/photo/sale-sign-promoting-large-discounts-pattern-soldier-sneakers.webp?a=1&b=1&s=612x612&w=0&k=20&c=Pn1z9iaDWbphFSxdAR32J5m71izsjQW7ZyrS_RbMyXM=",
       "stock": 25,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 76,
+      "id": "76",
       "name": "Suitcase",
       "category": "Travel",
       "price": 72,
       "description": "Suitcase - high quality and reliable.",
       "image": "https://plus.unsplash.com/premium_photo-1684407616508-b9e82c8bc8a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VpdGNhc2V8ZW58MHx8MHx8fDA%3D",
       "stock": 11,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 77,
+      "id": "77",
       "name": "Carry-On Luggage",
       "category": "Travel",
       "price": 49,
@@ -621,17 +621,17 @@
       "rating": 3.5
     },
     {
-      "id": 78,
+      "id": "78",
       "name": "Travel Backpack",
       "category": "Travel",
       "price": 37,
       "description": "Travel Backpack - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1603920347917-d16487c88db4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VHJhdmVsJTIwYmFja3BhY2t8ZW58MHx8MHx8fDA%3D",
       "stock": 13,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 79,
+      "id": "79",
       "name": "Duffel Bag",
       "category": "Travel",
       "price": 77,
@@ -641,17 +641,17 @@
       "rating": 3.5
     },
     {
-      "id": 80,
+      "id": "80",
       "name": "Travel Pillow",
       "category": "Travel",
       "price": 88,
       "description": "Travel Pillow - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/819481854/photo/blue-neck-pillows-isolated-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=JKG22beFA3HZX0xgCcEPRNScpU7ptceabz6fcqTe5gQ=",
       "stock": 15,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 81,
+      "id": "81",
       "name": "Neck Wallet",
       "category": "Travel",
       "price": 64,
@@ -661,17 +661,17 @@
       "rating": 3.5
     },
     {
-      "id": 82,
+      "id": "82",
       "name": "Packing Cubes",
       "category": "Travel",
       "price": 84,
       "description": "Packing Cubes - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1084569070/photo/cube-meshed-bags-with-rolled-clothes-set-of-travel-organizer-to-help-packing-well-organized.webp?a=1&b=1&s=612x612&w=0&k=20&c=GvzMrnL0hLmkl1MUds-RE29olaxdEMTv0LT6NknOrjU=",
       "stock": 17,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 83,
+      "id": "83",
       "name": "Luggage Tag",
       "category": "Travel",
       "price": 89,
@@ -681,17 +681,17 @@
       "rating": 3.5
     },
     {
-      "id": 84,
+      "id": "84",
       "name": "Travel Adapter",
       "category": "Travel",
       "price": 73,
       "description": "Travel Adapter - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/935909106/photo/set-of-universal-plug-adapters-for-travel-around-the-world-isolated-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=3lVqWqQyYl-8U3PyAUGZ1G-0dCKeTDZbbEKk-VE4cDQ=",
       "stock": 19,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 85,
+      "id": "85",
       "name": "Hiking Backpack",
       "category": "Travel",
       "price": 71,
@@ -701,17 +701,17 @@
       "rating": 3.5
     },
     {
-      "id": 86,
+      "id": "86",
       "name": "Camera Bag",
       "category": "Travel",
       "price": 113,
       "description": "Camera Bag - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1392218556/photo/handmade-leather-bag-with-vintage-camera.webp?a=1&b=1&s=612x612&w=0&k=20&c=PEnkDo5-9hk8mtUmBdVjzLLCu1YLoz1E9mpcXU105W0=",
       "stock": 21,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 87,
+      "id": "87",
       "name": "Waterproof Dry Bag",
       "category": "Travel",
       "price": 88,
@@ -721,17 +721,17 @@
       "rating": 3.5
     },
     {
-      "id": 88,
+      "id": "88",
       "name": "Sleeping Bag",
       "category": "Travel",
       "price": 87,
       "description": "Sleeping Bag - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1558477280-1bfed08ea5db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2xlZXBpbmclMjBiYWd8ZW58MHx8MHx8fDA%3D",
       "stock": 23,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 89,
+      "id": "89",
       "name": "Tent",
       "category": "Travel",
       "price": 107,
@@ -741,33 +741,37 @@
       "rating": 3.5
     },
     {
-      "id": 90,
+      "id": "90",
       "name": "Portable Stove",
       "category": "Travel",
       "price": 104,
       "description": "Portable Stove - high quality and reliable.",
       "image": "https://plus.unsplash.com/premium_photo-1682069522978-201c7fd0da8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGFibGUlMjBzdG92ZXxlbnwwfHwwfHx8MA%3D%3D",
       "stock": 25,
-      "rating": 4.0
+      "rating": 4
     }
   ],
   "cart": [
     {
-      "id": 1,
-      "userId": 2,
-      "productId": 3,
-      "quantity": 2
+      "id": "734f",
+      "productId": "18",
+      "quantity": 4
+    },
+    {
+      "id": "d2de",
+      "productId": "20",
+      "quantity": 6
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "password": "admin123",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "john_doe",
       "password": "1234",
       "role": "customer"
@@ -775,11 +779,17 @@
   ],
   "orders": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 2,
       "items": [
-        { "productId": 1, "quantity": 2 },
-        { "productId": 4, "quantity": 1 }
+        {
+          "productId": 1,
+          "quantity": 2
+        },
+        {
+          "productId": 4,
+          "quantity": 1
+        }
       ],
       "total": 160,
       "status": "pending",

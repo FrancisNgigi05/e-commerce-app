@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import { API_URL } from '../api'
 import GetUrsLogo from '../assets/GetUrsLogo.png'
 import SearchBar from '../SearchComponent/SearchBar'
@@ -39,7 +39,9 @@ function Layout() {
             </div>
             <div className='nav-display'>
                 <nav className='nav-container'>
-                    <img src={GetUrsLogo} alt="GetUrsLogo" id='logo'/>
+                    <Link to={'/'}>
+                        <img src={GetUrsLogo} alt="GetUrsLogo" id='logo'/>
+                    </Link>
                     <select
                         name="categories"
                         id="categories"
@@ -56,7 +58,9 @@ function Layout() {
                     </select>
                     <SearchBar />
                     <User style={{width: '3vw', height: '3vh'}}/>
-                    <ShoppingCart style={{width: '3vw', height: '3vh'}} id='shopping-cart'/>
+                    <Link to='/cart' style={{color: 'inherit'}}>
+                        <ShoppingCart style={{width: '3vw', height: '3vh'}} id='shopping-cart'/>
+                    </Link>
                 </nav>
             </div>
             <Outlet />

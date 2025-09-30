@@ -2,7 +2,8 @@ import React from 'react'
 import AddToCartBtn from '../AddToCartBtnComponent/AddToCartBtn'
 import './ProductItem.css'
 
-function ProductItem( {image, price, description, stock, rating, name} ) {
+function ProductItem( {image, price, description, stock, rating, name, product} ) {
+  
   return (
     <div className='outer-image-frame'>
       <div className='full-item'>
@@ -18,7 +19,7 @@ function ProductItem( {image, price, description, stock, rating, name} ) {
         <p id='description'>{description}</p>
         <p id='stock'>In Stock: {stock} items</p>
         <p id='rating'>Rating: {rating}</p>
-        <AddToCartBtn />
+        <AddToCartBtn product={product}/>
       </div>
     </div>
   )
