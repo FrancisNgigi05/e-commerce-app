@@ -24,7 +24,7 @@ Day 7 → Add “Add to Cart” button on product detail. Call POST /cart to add
 
 Day 8 → Enable update quantity (PATCH /cart/:id) and remove (DELETE /cart/:id). => Done
 
-Day 9 → Create a Checkout page. Place order (POST /orders).
+Day 9 → Create a Checkout page. Place order (POST /orders). => Done
 
 # Phase 2: Admin Dashboard (Week 2–3)
 

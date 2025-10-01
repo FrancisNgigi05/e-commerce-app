@@ -753,14 +753,16 @@
   ],
   "cart": [
     {
-      "id": "734f",
-      "productId": "18",
-      "quantity": 4
+      "id": "2e94",
+      "productId": "17",
+      "quantity": 2,
+      "userId": "2"
     },
     {
-      "id": "d2de",
-      "productId": "20",
-      "quantity": 6
+      "id": "47ae",
+      "productId": "19",
+      "quantity": 3,
+      "userId": "2"
     }
   ],
   "users": [
@@ -779,21 +781,36 @@
   ],
   "orders": [
     {
-      "id": "1",
-      "userId": 2,
+      "id": "7d9d",
+      "userId": "2",
       "items": [
         {
-          "productId": 1,
+          "productId": "17",
+          "quantity": 5
+        }
+      ],
+      "total": 205,
+      "status": "pending",
+      "createdAt": "2025-10-01",
+      "paidAt": null
+    },
+    {
+      "id": "dab3",
+      "userId": "2",
+      "items": [
+        {
+          "productId": "17",
           "quantity": 2
         },
         {
-          "productId": 4,
-          "quantity": 1
+          "productId": "19",
+          "quantity": 3
         }
       ],
-      "total": 160,
+      "total": 304,
       "status": "pending",
-      "createdAt": "2025-09-16"
+      "createdAt": "2025-10-01",
+      "paidAt": null
     }
   ]
 }

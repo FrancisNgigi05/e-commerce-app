@@ -45,6 +45,7 @@ export function CartProvider({ children }) {
         const newItem = {
           productId: product.id,
           quantity,
+          userId: "2"
         };
 
         const res = await fetch(`${API_URL}/cart`, {

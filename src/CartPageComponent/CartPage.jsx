@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useCart } from "../CartContextComponent/CartContext";
 import { API_URL } from "../api";
+import CheckoutPage from "../CheckoutPageComponent/CheckoutPage";
+import './CartPage.css'
 
 function CartPage() {
   const { cart, setCart } = useCart();
@@ -50,7 +52,8 @@ function CartPage() {
       {cart.length === 0 ? (
         <p>No items yet</p>
       ) : (
-        <>
+        <div className="cart-container">
+          <div style={{flex: 2}}>
             <table
             style={{
                 width: "50%",
@@ -101,7 +104,11 @@ function CartPage() {
             <div style={{fontWeight: 'bold', fontSize: '3vh'}}>
                 Total:  ${totalPrice}
             </div>
-        </>
+          </div>
+          <div style={{flex: 1}}>
+            <CheckoutPage total={totalPrice}/>
+          </div>
+        </div>
       )}
     </div>
   );
