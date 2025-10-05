@@ -45,7 +45,7 @@ function App() {
       .catch(err => console.error("Error fetching data: ",err));
   }, []);
 
-  console.log(categories);
+  // console.log(categories);
 
   const categoriesImageDisplayed = categories.map((cat) => {
     return (
@@ -56,8 +56,8 @@ function App() {
     )
   })
 
-  const smallDisplay = Object.keys(groupedProducts).map((category) => (
-      <div id={`section-${category.replace(/\s+/g, '-')}`}  className='category-preview'>
+  const smallDisplay = Object.keys(groupedProducts).map((category, index) => (
+      <div id={`section-${category.replace(/\s+/g, '-')}`}  className='category-preview' key={index}>
         <h2 className='category-heading'>{category}</h2>
         <div className='products-row'>
           {groupedProducts[category].map((prod) => (
