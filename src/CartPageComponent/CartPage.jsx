@@ -27,6 +27,19 @@ function CartPage() {
 
   function handleQuantityChange(id, newQuantity) {
     if (newQuantity < 1) return;
+
+    const cartItem = cart.find(item => String(item.id) === String(id));
+    if (!cartItem) return;
+
+    const product = products.find(p => String(p.id) === String(cartItem?.productId));
+    if (!product) return;
+
+    if (newQuantity > product.stock) {
+        alert(`Only ${product.stock} items in stock`);
+        return;
+    }
+
+
     setCart(prevCart => prevCart.map(item => String(item.id) === String(id) ? {...item, quantity: newQuantity} : item));
     
     fetch(`${API_URL}/cart/${id}`, {
@@ -47,7 +60,7 @@ function CartPage() {
 
   return (
     <div style={{ margin: "2vw" }}>
-      <h2 style={{marginBottom: '2vh'}}>Your Cart</h2>
+      <h2 style={{marginBottom: '2vh', marginLeft: '5vw'}}>Your Cart</h2>
 
       {cart.length === 0 ? (
         <p>No items yet</p>
@@ -59,7 +72,8 @@ function CartPage() {
                 width: "50%",
                 borderCollapse: "collapse",
                 textAlign: "left",
-                marginBottom: '3vh'
+                marginBottom: '3vh',
+                marginLeft: '5vw'
             }}
             >
             <thead>
@@ -101,11 +115,11 @@ function CartPage() {
                 })}
             </tbody>
             </table>
-            <div style={{fontWeight: 'bold', fontSize: '3vh'}}>
+            <div style={{fontWeight: 'bold', fontSize: '3vh', marginLeft: '5vw'}}>
                 Total:  ${totalPrice}
             </div>
           </div>
-          <div style={{flex: 1}}>
+          <div style={{flex: 1, marginRight: '5vw'}}>
             <CheckoutPage total={totalPrice}/>
           </div>
         </div>

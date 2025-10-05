@@ -57,7 +57,7 @@ function ProductDetail() {
                     <em className='description-detail'>{productDetail?.description}</em>
                     <strong className='price-detail'>${productDetail?.price}</strong>
                     <div className='stock-detail'>
-                       <ItemCounter counter={counter} increment={() => setCounter(c => c+1)} decrement={() => setCounter(c => Math.max(c-1,0))}/>
+                       <ItemCounter counter={counter} increment={() => setCounter(prev => (prev < productDetail?.stock ? prev + 1 : prev))} decrement={() => setCounter(c => Math.max(c-1,0))}/>
                         <p id='stock-detail-paragraph'>Only <em className='emphasis'>{productDetail?.stock} items</em> left</p>
                     </div>
                     <div className='btn-details'>

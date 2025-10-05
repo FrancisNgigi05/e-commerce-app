@@ -8,6 +8,7 @@ import Layout from './LayoutComponent/Layout.jsx'
 import ProductDetail from './ProductDetailComponent/ProductDetail.jsx'
 import { CartProvider } from './CartContextComponent/CartContext.jsx'
 import CartPage from './CartPageComponent/CartPage.jsx'
+import Payment from './PaymentPageComponent/Payment.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route path="/product/:category" element={<CategoryPage />} />
       <Route path='product/:category/:id' element={<ProductDetail />} />
       <Route path='/cart' element={<CartPage />} />
+      <Route path='/payment/:id' element={<Payment />} />
     </Route>
   )
 );

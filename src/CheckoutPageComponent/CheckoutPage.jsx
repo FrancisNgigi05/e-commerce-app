@@ -2,6 +2,7 @@ import React from 'react'
 import { useCart } from '../CartContextComponent/CartContext'
 import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../api';
+import './CheckoutPage.css'
 
 function CheckoutPage({ total }) {
     // console.log(total);
@@ -29,13 +30,16 @@ function CheckoutPage({ total }) {
         });
         const savedOrder = await res.json();
 
-        // navigate()
+        navigate(`/payment/${savedOrder.id}`);
     }
 
+
+
     return (
-        <div>
+        <div className="checkout-page">
             <h2>Checkout</h2>
-            <button onClick={handlePlaceOrder}>Place Order</button>
+            <p>Your total is: ${total}</p>
+            <button id='checkout-btn' onClick={handlePlaceOrder}>Proceed to Payment</button>
         </div>
     )
 }

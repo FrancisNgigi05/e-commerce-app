@@ -1,0 +1,26 @@
+.checkout-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 1vh;
+    max-width: 20vw;
+    gap: 2vh;
+    padding: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-btn{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 1vh 2vh;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    font-size: 1.2vh;
+    transition: background-color 0.3s ease;
+}
+
+#checkout-btn:hover {
+    background-color: #218838;
+}

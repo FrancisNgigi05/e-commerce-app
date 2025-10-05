@@ -27,7 +27,7 @@
       "price": 45,
       "description": "Office Chair - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1688578735427-994ecdea3ea4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZmaWNlJTIwY2hhaXJ8ZW58MHx8MHx8fDA%3D",
-      "stock": 13,
+      "stock": 9,
       "rating": 4
     },
     {
@@ -337,7 +337,7 @@
       "price": 48,
       "description": "Wireless Earbuds - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1627989580309-bfaf3e58af6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2lyZWxlc3MlMjBlYXJidWRzfGVufDB8fDB8fHww",
-      "stock": 14,
+      "stock": 0,
       "rating": 3.5
     },
     {
@@ -477,7 +477,7 @@
       "price": 43,
       "description": "Casual Slip-ons - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/489750113/photo/mens-loafer-shoe.webp?a=1&b=1&s=612x612&w=0&k=20&c=L7h0kOCwW8H0EqiHE5GIwAmprKGmjl21IlfKJP__X_M=",
-      "stock": 13,
+      "stock": 12,
       "rating": 4
     },
     {
@@ -753,15 +753,21 @@
   ],
   "cart": [
     {
-      "id": "2e94",
-      "productId": "17",
-      "quantity": 2,
+      "id": "21ff",
+      "productId": "3",
+      "quantity": 1,
       "userId": "2"
     },
     {
-      "id": "47ae",
-      "productId": "19",
-      "quantity": 3,
+      "id": "2f01",
+      "productId": "49",
+      "quantity": 5,
+      "userId": "2"
+    },
+    {
+      "id": "e121",
+      "productId": "63",
+      "quantity": 1,
       "userId": "2"
     }
   ],
@@ -781,36 +787,76 @@
   ],
   "orders": [
     {
-      "id": "7d9d",
+      "id": "6d5f",
       "userId": "2",
       "items": [
         {
-          "productId": "17",
+          "productId": "3",
+          "quantity": 1
+        }
+      ],
+      "total": 45,
+      "status": "paid",
+      "createdAt": "2025-10-02",
+      "paidAt": "2025-10-02T06:03:24.439Z"
+    },
+    {
+      "id": "ae6e",
+      "userId": "2",
+      "items": [
+        {
+          "productId": "3",
+          "quantity": 1
+        },
+        {
+          "productId": "49",
+          "quantity": 4
+        }
+      ],
+      "total": 237,
+      "status": "paid",
+      "createdAt": "2025-10-02",
+      "paidAt": "2025-10-02T06:05:52.477Z"
+    },
+    {
+      "id": "f681",
+      "userId": "2",
+      "items": [
+        {
+          "productId": "3",
+          "quantity": 1
+        },
+        {
+          "productId": "49",
           "quantity": 5
         }
       ],
-      "total": 205,
-      "status": "pending",
-      "createdAt": "2025-10-01",
-      "paidAt": null
+      "total": 285,
+      "status": "paid",
+      "createdAt": "2025-10-02",
+      "paidAt": "2025-10-02T06:10:58.629Z"
     },
     {
-      "id": "dab3",
+      "id": "2c58",
       "userId": "2",
       "items": [
         {
-          "productId": "17",
-          "quantity": 2
+          "productId": "3",
+          "quantity": 1
         },
         {
-          "productId": "19",
-          "quantity": 3
+          "productId": "49",
+          "quantity": 5
+        },
+        {
+          "productId": "63",
+          "quantity": 1
         }
       ],
-      "total": 304,
-      "status": "pending",
-      "createdAt": "2025-10-01",
-      "paidAt": null
+      "total": 328,
+      "status": "paid",
+      "createdAt": "2025-10-05",
+      "paidAt": "2025-10-05T06:51:36.389Z"
     }
   ]
 }
