@@ -8,12 +8,14 @@ function CheckoutPage({ total }) {
     // console.log(total);
     const {cart} = useCart();
     const navigate = useNavigate();
+    const loggedInUser = JSON.parse(localStorage.getItem("user"))
+
 
     const handlePlaceOrder = async () => {
         if(!cart.length) return alert("Cart is empty");
         const totalAmnt = total;
         const order = {
-            userId: "2",
+            userId: loggedInUser.id,
             items: cart.map(ci => ({productId: String(ci.productId), quantity: ci.quantity})),
             total: totalAmnt,
             status: 'pending',

@@ -37,7 +37,7 @@
       "price": 88,
       "description": "Bookshelf - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1543248939-4296e1fea89b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym9vayUyMHNoZWxmfGVufDB8fDB8fHww",
-      "stock": 6,
+      "stock": 5,
       "rating": 3.5
     },
     {
@@ -751,7 +751,20 @@
       "rating": 4
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "e480",
+      "productId": "63",
+      "quantity": 1,
+      "userId": "58fe"
+    },
+    {
+      "id": "f71f",
+      "productId": "18",
+      "quantity": 1,
+      "userId": "be06"
+    }
+  ],
   "users": [
     {
       "id": "1",
@@ -763,6 +776,24 @@
       "id": "2",
       "username": "john_doe",
       "password": "1234",
+      "role": "customer"
+    },
+    {
+      "id": "58fe",
+      "username": "Francis Ngigi",
+      "password": "12345",
+      "role": "customer"
+    },
+    {
+      "id": "be06",
+      "username": "Mark Kimani",
+      "password": "12345",
+      "role": "customer"
+    },
+    {
+      "id": "53d3",
+      "username": "James Njoroge",
+      "password": "12345",
       "role": "customer"
     }
   ],
@@ -886,6 +917,34 @@
       "status": "paid",
       "createdAt": "2025-10-05",
       "paidAt": "2025-10-05T08:04:56.508Z"
+    },
+    {
+      "id": "3827",
+      "userId": "2",
+      "items": [
+        {
+          "productId": "4",
+          "quantity": 1
+        }
+      ],
+      "total": 88,
+      "status": "paid",
+      "createdAt": "2025-10-07",
+      "paidAt": "2025-10-07T08:18:57.212Z"
+    },
+    {
+      "id": "7367",
+      "userId": "58fe",
+      "items": [
+        {
+          "productId": "63",
+          "quantity": 1
+        }
+      ],
+      "total": 43,
+      "status": "paid",
+      "createdAt": "2025-10-07",
+      "paidAt": "2025-10-07T08:27:07.641Z"
     }
   ]
 }

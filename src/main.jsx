@@ -9,16 +9,31 @@ import ProductDetail from './ProductDetailComponent/ProductDetail.jsx'
 import { CartProvider } from './CartContextComponent/CartContext.jsx'
 import CartPage from './CartPageComponent/CartPage.jsx'
 import Payment from './PaymentPageComponent/Payment.jsx'
+import SignUp from './AuthenticationComponents/SignUp.jsx'
+import LoginPage from './AuthenticationComponents/LoginPage.jsx'
+import ProtectedRoutes from './ProtectedRoutes/ProtectedRoutes.jsx'
+import UnauthorizedPage from './UnauthorizedComponent/UnauthorizedPage.jsx'
+import AdminDashboard from './AdminComponents/AdminDashboard/AdminDashboard.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<Layout />}>
-      <Route path="/" element={<App />} />
-      <Route path="/product/:category" element={<CategoryPage />} />
-      <Route path='product/:category/:id' element={<ProductDetail />} />
-      <Route path='/cart' element={<CartPage />} />
-      <Route path='/payment/:id' element={<Payment />} />
+    <>
+    <Route element={<ProtectedRoutes allowedRoles={['customer']}/>}>
+      <Route element={<Layout />}>
+        <Route path="/" element={<App />} />
+        <Route path="/product/:category" element={<CategoryPage />} />
+        <Route path='product/:category/:id' element={<ProductDetail />} />
+        <Route path='/cart' element={<CartPage />} />
+        <Route path='/payment/:id' element={<Payment />} />
+      </Route>
     </Route>
+    <Route element={<ProtectedRoutes allowedRoles={['admin']}/>}>
+      <Route path='/admin' element={<AdminDashboard />}/>
+    </Route>
+    <Route path='/unauthorized' element={<UnauthorizedPage />}/>
+    <Route path='/login' element={<LoginPage />} />
+    <Route path='/signup' element={<SignUp />} />
+    </>
   )
 );
 

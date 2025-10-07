@@ -27,8 +27,8 @@ Day 8 → Enable update quantity (PATCH /cart/:id) and remove (DELETE /cart/:id)
 Day 9 → Create a Checkout page. Place order (POST /orders). => Done
 
 # Phase 2: Admin Dashboard (Week 2–3)
-
 Goal: Admins can log in and manage products/orders.
+
 
 Day 10 → Create a Login page. Fake login with GET /users?username=x&password=y. Save user in localStorage.
 

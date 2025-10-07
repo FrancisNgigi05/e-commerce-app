@@ -5,14 +5,20 @@ const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
+  const [loggedInUser, setLoggedInUser] = useState(() => {return JSON.parse(localStorage.getItem("user")) || null});
+  const userId = loggedInUser?.id;
 
   // Load cart on mount
   useEffect(() => {
-    fetch(`${API_URL}/cart`)
+    if(!userId) {
+      setCart([]);
+      return;
+    }
+    fetch(`${API_URL}/cart?userId=${userId}`)
       .then((r) => r.json())
       .then((data) => setCart(data))
       .catch((err) => console.error("Error loading cart:", err));
-  }, []);
+  }, [userId]);
 
   const addToCart = async (product, quantity = 1) => {
     try {
@@ -45,7 +51,7 @@ export function CartProvider({ children }) {
         const newItem = {
           productId: product.id,
           quantity,
-          userId: "2"
+          userId: userId
         };
 
         const res = await fetch(`${API_URL}/cart`, {
@@ -74,7 +80,7 @@ export function CartProvider({ children }) {
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, setQuantityInCart, setCart }}>
+    <CartContext.Provider value={{ cart, addToCart, setQuantityInCart, setCart, loggedInUser, setLoggedInUser}}>
       {children}
     </CartContext.Provider>
   );
