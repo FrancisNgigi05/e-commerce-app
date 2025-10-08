@@ -30,9 +30,9 @@ Day 9 → Create a Checkout page. Place order (POST /orders). => Done
 Goal: Admins can log in and manage products/orders.
 
 
-Day 10 → Create a Login page. Fake login with GET /users?username=x&password=y. Save user in localStorage.
+Day 10 → Create a Login page. Fake login with GET /users?username=x&password=y. Save user in localStorage. => Done
 
-Day 11 → Protect /admin route. Only logged-in admin can access. Redirect others to /login.
+Day 11 → Protect /admin route. Only logged-in admin can access. Redirect others to /login. => Done
 
 Day 12 → Create Admin Product List page. Show all products.
 

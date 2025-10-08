@@ -1,0 +1,5 @@
+.admin-display {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+}

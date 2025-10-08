@@ -1,0 +1,16 @@
+.dashboard {
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: row;
+    align-items: start;
+    gap: 50vw;
+}
+
+.logout-btn {
+    margin-top: 1vh;
+    border-radius: 1vh;
+    border: solid 0.2vh black;
+    width: 4vw;
+    height: 3vh;
+    font-size: 2vh;
+}

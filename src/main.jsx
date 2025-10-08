@@ -14,6 +14,7 @@ import LoginPage from './AuthenticationComponents/LoginPage.jsx'
 import ProtectedRoutes from './ProtectedRoutes/ProtectedRoutes.jsx'
 import UnauthorizedPage from './UnauthorizedComponent/UnauthorizedPage.jsx'
 import AdminDashboard from './AdminComponents/AdminDashboard/AdminDashboard.jsx'
+import AdminLayout from './AdminLayoutComponent/AdminLayout.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,7 +29,9 @@ const router = createBrowserRouter(
       </Route>
     </Route>
     <Route element={<ProtectedRoutes allowedRoles={['admin']}/>}>
-      <Route path='/admin' element={<AdminDashboard />}/>
+      <Route element={<AdminLayout />}>
+        <Route path='/admin' element={<AdminDashboard />}/>
+      </Route>
     </Route>
     <Route path='/unauthorized' element={<UnauthorizedPage />}/>
     <Route path='/login' element={<LoginPage />} />
