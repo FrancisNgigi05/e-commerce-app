@@ -10,30 +10,52 @@ function CheckoutPage({ total }) {
     const navigate = useNavigate();
     const loggedInUser = JSON.parse(localStorage.getItem("user"))
 
-
     const handlePlaceOrder = async () => {
-        if(!cart.length) return alert("Cart is empty");
+        if (!cart.length) return alert("Cart is empty");
+
         const totalAmnt = total;
-        const order = {
-            userId: loggedInUser.id,
-            items: cart.map(ci => ({productId: String(ci.productId), quantity: ci.quantity})),
+        const userId = loggedInUser.id;
+
+        // Fetch all orders (since json-server might not support query filters)
+        const res = await fetch(`${API_URL}/orders`);
+        const allOrders = await res.json();
+
+        // Find if this user already has a pending order
+        const pendingOrder = allOrders.find(o => o.userId === userId && o.status === "pending");
+
+        const orderData = {
+            userId,
+            items: cart.map(ci => ({
+            productId: String(ci.productId),
+            quantity: ci.quantity,
+            })),
             total: totalAmnt,
-            status: 'pending',
+            status: "pending",
             createdAt: new Date().toISOString().split("T")[0],
-            paidAt: null
+            paidAt: null,
         };
 
-        const res = await fetch(`${API_URL}/orders`, {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(order)
-        });
-        const savedOrder = await res.json();
+        if (pendingOrder) {
+            // 3️⃣ Update existing pending order
+            await fetch(`${API_URL}/orders/${pendingOrder.id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(orderData),
+            });
 
-        navigate(`/payment/${savedOrder.id}`);
-    }
+            navigate(`/payment/${pendingOrder.id}`);
+        } else {
+            // 4️⃣ Otherwise, create new
+            const newOrderRes = await fetch(`${API_URL}/orders`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(orderData),
+            });
+            const savedOrder = await newOrderRes.json();
+
+            navigate(`/payment/${savedOrder.id}`);
+        }
+    };
 
 
 

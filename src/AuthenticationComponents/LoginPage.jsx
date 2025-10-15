@@ -19,16 +19,25 @@ function Loginpage() {
             .then((r) => r.json())
             .then((users) => {
                 const user = users.find((u) => u.username === formData.username && u.password === formData.password);
-                if (user && user.role === 'customer') {
-                    alert(`Welcom back, ${user.username}`)
-                    localStorage.setItem("user", JSON.stringify(user));
-                    setLoggedInUser(user);
-                    navigate('/')
-                }
-                else if(user && user.role === 'admin') {
-                    alert(`Welcom back, ${user.username}`)
-                    localStorage.setItem("user", JSON.stringify(user));
-                    navigate('/admin');
+                if (user)  {
+                    fetch(`${API_URL}/users/${user.id}`, {
+                            method: 'PATCH',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({active: "active"})
+                    })
+                        .then((r) => r.json())
+                        .then((updatedUser) => {
+                            alert(`Welcome back, ${updatedUser.username}`);
+                            localStorage.setItem("user", JSON.stringify(updatedUser));
+                            setLoggedInUser(updatedUser);
+                            if (updatedUser.role === 'admin') {
+                                navigate('/admin');
+                            } else {
+                                navigate('/');
+                            }
+                        })
                 }
                 else {
                     alert("Invalid username or password");

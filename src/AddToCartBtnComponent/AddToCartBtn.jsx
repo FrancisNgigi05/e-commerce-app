@@ -11,10 +11,18 @@ function AddToCartBtn({ product, quantity, redirect=false }) {
   const { addToCart } = useCart();
   const navigate = useNavigate();
   
+  
   // Handle click event
   function handleAddToCart() {
+    console.log("Add to cart product:", product);
+    if(product.stock === 0) {
+      alert("Product not in stock");
+      return;
+    }
     // Call the context function and pass the product
     addToCart(product, quantity);
+    console.log("Add to cart product:", product);
+    
     if (redirect) {
       navigate('/cart');
     }

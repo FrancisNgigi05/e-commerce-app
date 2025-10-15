@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom';
-import { useLogout } from '../AuthenticationComponents/useLogout';
+import useLogout from '../AuthenticationComponents/useLogout';
 import AdminNavbar from '../AdminNavbar/AdminNavbar';
 import './AdminLayout.css';
 

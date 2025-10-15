@@ -15,6 +15,7 @@ import ProtectedRoutes from './ProtectedRoutes/ProtectedRoutes.jsx'
 import UnauthorizedPage from './UnauthorizedComponent/UnauthorizedPage.jsx'
 import AdminDashboard from './AdminComponents/AdminDashboard/AdminDashboard.jsx'
 import AdminLayout from './AdminLayoutComponent/AdminLayout.jsx'
+import AdminOrders from './AdminOrdersComponent/AdminOrders.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
     <Route element={<ProtectedRoutes allowedRoles={['admin']}/>}>
       <Route element={<AdminLayout />}>
         <Route path='/admin' element={<AdminDashboard />}/>
+        <Route path='/admin/orders' element={<AdminOrders />} />
       </Route>
     </Route>
     <Route path='/unauthorized' element={<UnauthorizedPage />}/>

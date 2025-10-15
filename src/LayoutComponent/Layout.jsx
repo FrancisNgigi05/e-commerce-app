@@ -4,7 +4,7 @@ import { API_URL } from '../api'
 import GetUrsLogo from '../assets/GetUrsLogo.png'
 import SearchBar from '../SearchComponent/SearchBar'
 import { User, ShoppingCart, Phone } from 'lucide-react'
-import { useLogout } from '../AuthenticationComponents/useLogout'
+import useLogout from '../AuthenticationComponents/useLogout'
 
 function Layout() {
     const [categories, setCategories] = useState([]);

@@ -1,5 +1,6 @@
 import React from 'react'
 import './BuyNowbtn.css'
+import { Link } from 'react-router-dom';
 
 function BuyNowbtn() {
   return (

@@ -6,11 +6,39 @@
     gap: 50vw;
 }
 
+
+.admin-data-display {
+    display: flex;
+    flex-direction: row;
+    gap: 9vw;
+    margin-top: 8vh;
+    justify-content: center ;
+    flex-wrap: wrap;
+}
+
+.display {
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid black 0.2vh; */
+    flex-wrap: wrap;
+    width: 15vw;
+    height: 15vh;
+    gap: 2vh;
+    text-align: center;
+    font-size: 1.5vh;
+    box-shadow: 0.5vh 0.5vh 2vh grey;
+    border-radius: 1vh;
+}
+
+
+
 .logout-btn {
     margin-top: 1vh;
     border-radius: 1vh;
     border: solid 0.2vh black;
     width: 4vw;
     height: 3vh;
-    font-size: 2vh;
+    font-size: 1vh;
 }

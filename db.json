@@ -17,7 +17,7 @@
       "price": 59,
       "description": "Wooden Dining Table - high quality and reliable.",
       "image": "https://media.istockphoto.com/id/1329937916/photo/scandinavian-domestic-dining-room-interior.webp?a=1&b=1&s=612x612&w=0&k=20&c=pgPp8y_7c4VfW7QPSUOKSbH0xuySskbEC2nZf7TdzSc=",
-      "stock": 12,
+      "stock": 8,
       "rating": 3.5
     },
     {
@@ -27,7 +27,7 @@
       "price": 45,
       "description": "Office Chair - high quality and reliable.",
       "image": "https://images.unsplash.com/photo-1688578735427-994ecdea3ea4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZmaWNlJTIwY2hhaXJ8ZW58MHx8MHx8fDA%3D",
-      "stock": 6,
+      "stock": 0,
       "rating": 4
     },
     {
@@ -753,21 +753,15 @@
   ],
   "cart": [
     {
-      "id": "e480",
-      "productId": "63",
-      "quantity": 1,
-      "userId": "58fe"
-    },
-    {
       "id": "f71f",
       "productId": "18",
       "quantity": 1,
       "userId": "be06"
     },
     {
-      "id": "65f3",
-      "productId": "3",
-      "quantity": 2,
+      "id": "50e7",
+      "productId": "4",
+      "quantity": 4,
       "userId": "58fe"
     }
   ],
@@ -776,181 +770,51 @@
       "id": "1",
       "username": "admin",
       "password": "admin123",
-      "role": "admin"
+      "role": "admin",
+      "active": "active"
     },
     {
       "id": "2",
       "username": "john_doe",
       "password": "1234",
-      "role": "customer"
+      "role": "customer",
+      "active": "inactive"
     },
     {
       "id": "58fe",
       "username": "Francis Ngigi",
       "password": "12345",
-      "role": "customer"
+      "role": "customer",
+      "active": "active"
     },
     {
       "id": "be06",
       "username": "Mark Kimani",
       "password": "12345",
-      "role": "customer"
+      "role": "customer",
+      "active": "inactive"
     },
     {
       "id": "53d3",
       "username": "James Njoroge",
       "password": "12345",
-      "role": "customer"
+      "role": "customer",
+      "active": "inactive"
+    },
+    {
+      "id": "e686",
+      "username": "Jeff Solomon",
+      "password": "12345",
+      "role": "customer",
+      "active": "inactive"
+    },
+    {
+      "id": "4a52",
+      "username": "Martin James",
+      "password": "12345",
+      "role": "customer",
+      "active": "inactive"
     }
   ],
-  "orders": [
-    {
-      "id": "0bb4",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "78",
-          "quantity": 2
-        }
-      ],
-      "total": 74,
-      "status": "paid",
-      "createdAt": "2025-10-05",
-      "paidAt": "2025-10-05T07:24:24.091Z"
-    },
-    {
-      "id": "91cf",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "78",
-          "quantity": 2
-        },
-        {
-          "productId": "63",
-          "quantity": 2
-        }
-      ],
-      "total": 160,
-      "status": "paid",
-      "createdAt": "2025-10-05",
-      "paidAt": "2025-10-05T07:34:02.715Z"
-    },
-    {
-      "id": "10cd",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "63",
-          "quantity": 4
-        }
-      ],
-      "total": 172,
-      "status": "paid",
-      "createdAt": "2025-10-05",
-      "paidAt": "2025-10-05T07:35:19.324Z"
-    },
-    {
-      "id": "2a1e",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "4",
-          "quantity": 1
-        }
-      ],
-      "total": 88,
-      "status": "paid",
-      "createdAt": "2025-10-05",
-      "paidAt": "2025-10-05T07:47:46.005Z"
-    },
-    {
-      "id": "b4aa",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "4",
-          "quantity": 1
-        }
-      ],
-      "total": 88,
-      "status": "paid",
-      "createdAt": "2025-10-05",
-      "paidAt": "2025-10-05T07:48:54.123Z"
-    },
-    {
-      "id": "bf1f",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "63",
-          "quantity": 2
-        }
-      ],
-      "total": 86,
-      "status": "paid",
-      "createdAt": "2025-10-05",
-      "paidAt": "2025-10-05T08:02:53.186Z"
-    },
-    {
-      "id": "feab",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "48",
-          "quantity": 2
-        }
-      ],
-      "total": 120,
-      "status": "paid",
-      "createdAt": "2025-10-05",
-      "paidAt": "2025-10-05T08:03:47.706Z"
-    },
-    {
-      "id": "663a",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "3",
-          "quantity": 1
-        },
-        {
-          "productId": "17",
-          "quantity": 1
-        }
-      ],
-      "total": 86,
-      "status": "paid",
-      "createdAt": "2025-10-05",
-      "paidAt": "2025-10-05T08:04:56.508Z"
-    },
-    {
-      "id": "3827",
-      "userId": "2",
-      "items": [
-        {
-          "productId": "4",
-          "quantity": 1
-        }
-      ],
-      "total": 88,
-      "status": "paid",
-      "createdAt": "2025-10-07",
-      "paidAt": "2025-10-07T08:18:57.212Z"
-    },
-    {
-      "id": "7367",
-      "userId": "58fe",
-      "items": [
-        {
-          "productId": "63",
-          "quantity": 1
-        }
-      ],
-      "total": 43,
-      "status": "paid",
-      "createdAt": "2025-10-07",
-      "paidAt": "2025-10-07T08:27:07.641Z"
-    }
-  ]
+  "orders": []
 }
