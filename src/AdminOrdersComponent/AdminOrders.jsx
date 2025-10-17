@@ -4,6 +4,9 @@ import { API_URL } from '../api';
 
 function AdminOrders() {
     const [allOrders, setAllOrders] = useState([]);
+    const [filterBy, setFilterBy] = useState("All");
+    const [currentPage, setCurrentPage] = useState(1);
+    const ordersPerPage = 8;
 
     // Fetching all orders
     useEffect(() => {
@@ -22,6 +25,8 @@ function AdminOrders() {
         return () => clearInterval(interval);
     },[]);
 
+    
+    
     function handleDeleteOrder(id) {
         fetch(`${API_URL}/orders/${id}`, {
             method: 'DELETE'
@@ -30,8 +35,29 @@ function AdminOrders() {
         setAllOrders((ord) => ord.filter((or) => or.id !== id));
     }
 
-    const ordersDisplay = allOrders.map((ord) => 
-        <tr>
+    function handleChange(e) {
+        setFilterBy(e.target.value);
+        setCurrentPage(1);
+    }
+
+    const filteredOrders = allOrders.filter((or) => {
+        if(filterBy === "All") {
+            return true;
+        }
+        else {
+            return filterBy === or.status;
+        }
+    });
+
+    // Pagination login
+    const indexOfLastOrder = currentPage * ordersPerPage;
+    const indexOfFirstOrder = indexOfLastOrder - ordersPerPage;
+    const currentOrders = filteredOrders.slice(indexOfFirstOrder, indexOfLastOrder);
+    const totalPages = Math.ceil(filteredOrders.length / ordersPerPage);
+
+
+    const ordersDisplay = currentOrders.map((ord) => 
+        <tr key={ord.id}>
             <td>{ord.id}</td>
             <td>{ord.userId}</td>
             <td>{ord.items.length}</td>
@@ -44,9 +70,22 @@ function AdminOrders() {
         </tr>
     );
 
+    // Page numbers
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++ ) {
+        pageNumbers.push(i);
+    }
+
     return (
         <div>
-            <h1 className='orders-heading'>Welcome to the Orders Section!</h1>
+            <div className='order-heading'>
+                <h1 className='orders-heading'>Welcome to the Orders Section!</h1>
+                <select onChange={handleChange} className='select-order'>
+                    <option value="All">--Sort By--</option>
+                    <option value="pending">Pending</option>
+                    <option value="paid">Paid</option>
+                </select>
+            </div>
             <table className='orders-table'>
                 <thead>
                     <tr>
@@ -79,6 +118,35 @@ function AdminOrders() {
                     {ordersDisplay}
                 </tbody>
             </table>
+            {/* Pagination Controls */}
+            <div className='pagination'>
+                <button
+                    onClick={() => setCurrentPage((prev) => Math.max(prev-1, 1))}
+                    disabled={currentPage === 1}
+                    className='pagination-btn'
+                >
+                    « Prev
+                </button>
+                <div className='page-numbers'>
+                        {pageNumbers.map((num =>(
+
+                            <button
+                                key={num}
+                                onClick={() => setCurrentPage(num)}
+                                className={`page-btn ${currentPage === num ? 'active' : ''}`}
+                            >
+                                {num}
+                            </button>
+                        )))}
+                </div>
+                <button
+                    onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                    disabled={currentPage === totalPages}
+                    className="pagination-btn"
+                >
+                    Next »
+                </button>
+            </div>
         </div>
     )
 }
