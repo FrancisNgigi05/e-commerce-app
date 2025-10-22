@@ -791,7 +791,7 @@
       "username": "Francis Ngigi",
       "password": "12345",
       "role": "customer",
-      "active": "active"
+      "active": "inactive"
     },
     {
       "id": "be06",

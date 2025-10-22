@@ -36,7 +36,7 @@ Day 11 → Protect /admin route. Only logged-in admin can access. Redirect other
 
 Day 12 → Create Admin Product List page. Show all products. => Done
 
-Day 13 → Add “Add Product” form (POST /products).
+Day 13 → Add “Add Product” form (POST /products). => All that is left is testing if the form for adding a new product works and styling the form => Almost done
 
 Day 14 → Add “Edit Product” form (PATCH /products/:id).
 

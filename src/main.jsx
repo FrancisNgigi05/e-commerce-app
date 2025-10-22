@@ -17,6 +17,7 @@ import AdminDashboard from './AdminComponents/AdminDashboard/AdminDashboard.jsx'
 import AdminLayout from './AdminLayoutComponent/AdminLayout.jsx'
 import AdminOrders from './AdminOrdersComponent/AdminOrders.jsx'
 import AdminProduct from './AdminProductsDisplayComponent/AdminProduct.jsx'
+import AdminAddProduct from './AdminProductsDisplayComponent/AdminAddProduct.jsx'
 
 
 const router = createBrowserRouter(
@@ -32,6 +33,7 @@ const router = createBrowserRouter(
       </Route>
     </Route>
     <Route element={<ProtectedRoutes allowedRoles={['admin']}/>}>
+      <Route path='/new-product/form' element={<AdminAddProduct />}/>
       <Route element={<AdminLayout />}>
         <Route path='/admin' element={<AdminDashboard />}/>
         <Route path='/admin/orders' element={<AdminOrders />} />

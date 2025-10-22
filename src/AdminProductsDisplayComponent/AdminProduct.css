@@ -3,3 +3,18 @@
     width: 5vw;
     object-fit: cover;
 }
+
+.edit-product-btn {
+    background-color: green;
+    color: white;
+    height: 3vh;
+    width: 4vw;
+    border-radius: 0.4vh;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.edit-product-btn:hover {
+    background-color:greenyellow;
+}
