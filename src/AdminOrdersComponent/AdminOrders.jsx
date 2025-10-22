@@ -49,7 +49,7 @@ function AdminOrders() {
         }
     });
 
-    // Pagination login
+    // Pagination logic
     const indexOfLastOrder = currentPage * ordersPerPage;
     const indexOfFirstOrder = indexOfLastOrder - ordersPerPage;
     const currentOrders = filteredOrders.slice(indexOfFirstOrder, indexOfLastOrder);

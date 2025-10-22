@@ -759,9 +759,15 @@
       "userId": "be06"
     },
     {
-      "id": "50e7",
+      "id": "f5b3",
+      "productId": "5",
+      "quantity": 1,
+      "userId": "58fe"
+    },
+    {
+      "id": "c420",
       "productId": "4",
-      "quantity": 4,
+      "quantity": 2,
       "userId": "58fe"
     }
   ],
@@ -816,5 +822,24 @@
       "active": "inactive"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "userId": "58fe",
+      "items": [
+        {
+          "productId": "5",
+          "quantity": 1
+        },
+        {
+          "productId": "4",
+          "quantity": 2
+        }
+      ],
+      "total": 258,
+      "status": "pending",
+      "createdAt": "2025-10-17",
+      "paidAt": null,
+      "id": "e6e5"
+    }
+  ]
 }

@@ -16,6 +16,8 @@ import UnauthorizedPage from './UnauthorizedComponent/UnauthorizedPage.jsx'
 import AdminDashboard from './AdminComponents/AdminDashboard/AdminDashboard.jsx'
 import AdminLayout from './AdminLayoutComponent/AdminLayout.jsx'
 import AdminOrders from './AdminOrdersComponent/AdminOrders.jsx'
+import AdminProduct from './AdminProductsDisplayComponent/AdminProduct.jsx'
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -33,6 +35,7 @@ const router = createBrowserRouter(
       <Route element={<AdminLayout />}>
         <Route path='/admin' element={<AdminDashboard />}/>
         <Route path='/admin/orders' element={<AdminOrders />} />
+        <Route path='/admin/products' element={<AdminProduct/>}/>
       </Route>
     </Route>
     <Route path='/unauthorized' element={<UnauthorizedPage />}/>

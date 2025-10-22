@@ -34,17 +34,17 @@ Day 10 → Create a Login page. Fake login with GET /users?username=x&password=y
 
 Day 11 → Protect /admin route. Only logged-in admin can access. Redirect others to /login. => Done
 
-Day 12 → Create Admin Product List page. Show all products.
+Day 12 → Create Admin Product List page. Show all products. => Done
 
 Day 13 → Add “Add Product” form (POST /products).
 
 Day 14 → Add “Edit Product” form (PATCH /products/:id).
 
-Day 15 → Add “Delete Product” button (DELETE /products/:id).
+Day 15 → Add “Delete Product” button (DELETE /products/:id). => Done
 
-****#Day 16 → Create Admin Orders page. Fetch GET /orders. => Orders can be seen. All that is left is to filter the orders according to paid or pending, And I also need to create OrderDetail component to view more about a certain order eg: products ordered, user details related to that order total amount of the order
+****#Day 16 → Create Admin Orders page. Fetch GET /orders. => I need to create OrderDetail component to view more about a certain order eg: products ordered, user details related to that order total amount of the order
 
-Day 17 → Add ability to change order status (PATCH /orders/:id).
+Day 17 → Add ability to change order status (PATCH /orders/:id). => Done
 
 # Phase 3: Polish & Deploy (Week 3+)
 

@@ -40,36 +40,3 @@ const useLogout = () => {
 };
 
 export default useLogout;
-
-
-// import React from 'react'
-// import { useNavigate } from 'react-router-dom'
-// import { useCart } from '../CartContextComponent/CartContext';
-// import { API_URL } from '../api';
-
-
-// export function useLogout() {
-//     const navigate = useNavigate();
-//     const {setLoggedInUser, setCart, loggedInUser} = useCart()
-    
-//     const logout = async () => {
-//         if(loggedInUser) {
-//             try {
-//                 await fetch(`${API_URL}/users/${loggedInUser.id}`, {
-//                     method: 'PATCH',
-//                     headers: {
-//                         "Content-Type": "application/json",
-//                     },
-//                     body: JSON.stringify({active: "inactive"}),
-//                 });
-//             }catch(err)  {console.error('Failed to update user status:', err)};
-//         }
-//     }
-//     // Clear user session
-//     localStorage.removeItem("user");
-//     setLoggedInUser(null);
-//     setCart([]);
-//     navigate('/login')
-
-//     return logout;
-// }
