@@ -8,7 +8,7 @@ function AdminNavbar() {
         <NavLink to='/admin' end>Dashboard</NavLink>
         <NavLink to='/admin/orders'>Orders</NavLink>
         <NavLink to='/admin/products'>Products</NavLink>
-        <NavLink to='//'>Customers</NavLink>
+        <NavLink to='/admin/customers'>Customers</NavLink>
     </div>
   )
 }

@@ -18,7 +18,7 @@ import AdminLayout from './AdminLayoutComponent/AdminLayout.jsx'
 import AdminOrders from './AdminOrdersComponent/AdminOrders.jsx'
 import AdminProduct from './AdminProductsDisplayComponent/AdminProduct.jsx'
 import AdminAddProduct from './AdminProductsDisplayComponent/AdminAddProduct.jsx'
-
+import AdminViewCustomers from './AdminCustomersComponent/AdminViewCustomers.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -38,6 +38,7 @@ const router = createBrowserRouter(
         <Route path='/admin' element={<AdminDashboard />}/>
         <Route path='/admin/orders' element={<AdminOrders />} />
         <Route path='/admin/products' element={<AdminProduct/>}/>
+        <Route path='/admin/customers' element={<AdminViewCustomers />}/>
       </Route>
     </Route>
     <Route path='/unauthorized' element={<UnauthorizedPage />}/>

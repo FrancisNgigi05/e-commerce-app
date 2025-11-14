@@ -20,14 +20,6 @@ function AdminAddProduct() {
             [name]: value
         })
     }
-    // useEffect(() => {
-    // fetch(`${API_URL}/products`)
-    //   .then(r => r.json())
-    //   .then(data => {
-    //     const allCategories = data.map(recipe => recipe.category);
-    //     const uniqueCategories = [...new Set(allCategories)];
-    //     setCategories(uniqueCategories);
-    //   },[])
 
     useEffect(() => {
         fetch(`${API_URL}/products`)
